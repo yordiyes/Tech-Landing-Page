@@ -4,10 +4,11 @@ import HeroSection from './components/HeroSection';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import "./App.css"
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
       <HeroSection />
       <Services />
@@ -16,5 +17,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;
