@@ -29,7 +29,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <motion.h1
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.1, rotate: 10 }}
+          animate={{ y: 0 }}
+          transition={{
+            type: 'spring',
+            stiffness: 500,
+            damping: 25,
+          }}
           className="text-2xl font-extrabold text-blue-400 cursor-pointer"
         >
           DevCompany
@@ -40,7 +46,11 @@ const Navbar = () => {
           {['Home', 'Services', 'Portfolio', 'About', 'Contact'].map((link, index) => (
             <motion.li
               key={link}
-              whileHover={{ scale: 1.1, color: '#3b82f6' }}
+              whileHover={{
+                scale: 1.2,
+                textShadow: '0px 0px 8px rgba(59, 130, 246, 1)',
+                color: '#3b82f6',
+              }}
               transition={{ type: 'spring', stiffness: 300 }}
               className="cursor-pointer hover:text-blue-500"
             >
@@ -51,9 +61,13 @@ const Navbar = () => {
 
         {/* Call to Action Button */}
         <motion.button
-          whileHover={{ scale: 1.05 }}
+          whileHover={{
+            scale: 1.05,
+            y: -5,
+            textShadow: '0px 0px 10px rgba(59, 130, 246, 1)',
+          }}
           whileTap={{ scale: 0.95 }}
-          className="bg-blue-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-600"
+          className="bg-blue-500 text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all"
         >
           Get Started
         </motion.button>
