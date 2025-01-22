@@ -31,8 +31,8 @@ const Footer = () => {
         </div>
       </div>
       {/* Decorative Floating Elements */}
-      <div className="absolute -top-10 left-10 w-40 h-40 bg-blue-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute -bottom-10 right-10 w-52 h-52 bg-pink-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute -top-20 left-10 w-40 h-40 bg-blue-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute -bottom-0 right-10 w-52 h-52 bg-pink-500 opacity-20 rounded-full blur-3xl animate-pulse"></div>
     </footer>
   );
 };
